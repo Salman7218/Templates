@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramcloud IT Services & Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.405);
+            color: white;
+            padding: 0rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .navbar-nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar-nav a:hover {
+            color: #040404;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./building\ banner1.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 2rem;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .hero a {
+            background: #007BFF;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .hero a:hover {
+            background: #0056b3;
+        }
+        section {
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .service {
+            flex: 1 1 calc(30% - 2rem);
+            max-width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+        }
+        .service h3 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+        .service p {
+            padding: 0 1rem 1rem;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .testimonials {
+            background: #f9f9f9;
+            padding: 4rem 2rem;
+        }
+        .testimonial {
+            max-width: 350px;
+            margin: 0 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            justify-items: center;
+        }
+        .testimonial img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .testimonial p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .testimonial h4 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #007BFF;
+            color: white;
+            margin-top: 3rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        .contact-info div {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-info i {
+            margin-right: 0.5rem;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Ramcloud IT Services</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blogs">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#terms">Terms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Empowering Your Business</h1>
+        <p>Innovative IT solutions tailored for your success.</p>
+        <a href="#services">Explore Services</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Ramcloud IT Services & Consulting is dedicated to providing cutting-edge solutions that empower businesses to thrive in the digital age. Our expert team ensures your success with tailored IT strategies and top-notch support.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services container">
+            <div class="service">
+                <img src="./cloud solution.jpg" alt="Cloud Solutions">
+                <h3>Cloud Solutions</h3>
+                <p>Scalable and secure cloud services to optimize your business operations.</p>
+            </div>
+            <div class="service">
+                <img src="./cyber security.jpg" alt="Cybersecurity">
+                <h3>Cybersecurity</h3>
+                <p>Comprehensive protection against evolving digital threats.</p>
+            </div>
+            <div class="service">
+                <img src="./IT Consulting.jpg" alt="IT Consulting">
+                <h3>IT Consulting</h3>
+                <p>Expert guidance for seamless digital transformation and innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-grid container">
+            <div class="testimonial">
+                <img src="./client.jpg" alt="Client 1">
+                <p>"Ramcloud helped us transform our business with cutting-edge IT solutions. Highly recommended!"</p>
+                <h4>John Doe</h4>
+            </div>
+            <div class="testimonial">
+                <img src="./client.jpg" alt="Client 2">
+                <p>"Their cybersecurity services kept us safe and secure throughout the digital transition. Excellent service!"</p>
+                <h4>Jane Smith</h4>
+            </div>
+            <div class="testimonial">
+                <img src="./client.jpg" alt="Client 3">
+                <p>"The team at Ramcloud truly understands business needs. Their IT consulting services helped us grow efficiently."</p>
+                <h4>Michael Lee</h4>
+            </div>
+            <div class="testimonial">
+                <img src="./client.jpg" alt="Client 3">
+                <p>"The team at Ramcloud truly understands business needs. Their IT consulting services helped us grow efficiently."</p>
+                <h4>Mike</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs">
+        <h2>Our Blogs</h2>
+        <p>Stay updated with the latest insights, tips, and trends in the IT world.</p>
+        <div class="services container">
+            <div class="service">
+                <img src="./Understanding Cloud Security.jpg" alt="Blog 1">
+                <h3>Understanding Cloud Security</h3>
+                <p>Learn how to protect your business in the cloud.</p>
+            </div>
+            <div class="service">
+                <img src="./op Cybersecurity Practices for 2024.jpg" alt="Blog 2">
+                <h3>Top Cybersecurity Practices for 2024</h3>
+                <p>Stay ahead with the latest cybersecurity trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Section -->
+    <section id="terms">
+        <h2>Terms of Service</h2>
+        <p>Our terms and policies ensure a transparent and secure experience for all our clients.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We're here to help! Reach out to us for your IT needs.</p>
+        <div class="contact-info">
+            <div><i class="fas fa-phone-alt"></i> +1 234 567 890</div>
+            <div><i class="fas fa-envelope"></i> contact@ramcloud.com</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ramcloud IT Services & Consulting. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
